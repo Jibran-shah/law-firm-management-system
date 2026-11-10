@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE082"/>
+      <stop offset="30%" stop-color="#DFB235"/>
+      <stop offset="70%" stop-color="#9A7B1C"/>
+      <stop offset="100%" stop-color="#E1B843"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow for Scalability -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Scale Center Pillar & Finial -->
+    <path d="M 256,60 L 264,80 L 256,88 L 248,80 Z" fill="url(#gold)"/>
+    <rect x="252" y="85" width="8" height="260" rx="4" fill="url(#gold)"/>
+
+    <!-- Scales Balance Beam -->
+    <path d="M 110,130 Q 256,110 402,130" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="110" cy="130" r="8" fill="url(#gold)"/>
+    <circle cx="402" cy="130" r="8" fill="url(#gold)"/>
+
+    <!-- Left Scale Pan & Support Strings -->
+    <line x1="110" y1="130" x2="70" y2="215" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
+    <line x1="110" y1="130" x2="150" y2="215" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
+    <path d="M 60,215 Q 110,245 160,215 Z" fill="url(#gold)"/>
+
+    <!-- Right Scale Pan & Support Strings -->
+    <line x1="402" y1="130" x2="362" y2="215" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
+    <line x1="402" y1="130" x2="442" y2="215" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
+    <path d="M 352,215 Q 402,245 452,215 Z" fill="url(#gold)"/>
+
+    <!-- Bold, Clean Serif 'S' (Centered on Center Pillar) -->
+    <path d="M 285,185 
+             C 285,160 230,160 230,195 
+             C 230,240 282,235 282,280 
+             C 282,320 225,320 225,290" 
+          fill="none" stroke="url(#gold)" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter"/>
+    
+    <!-- Top & Bottom Serif Details for Letter 'S' -->
+    <rect x="277" y="180" width="16" height="6" fill="url(#gold)"/>
+    <rect x="217" y="289" width="16" height="6" fill="url(#gold)"/>
+
+    <!-- Open Book Base -->
+    <path d="M 130,360 Q 256,335 256,375 Q 256,335 382,360 L 370,380 Q 256,360 256,395 Q 256,360 142,380 Z" fill="url(#gold)"/>
+    
+    <!-- Pedestal Base Stand -->
+    <path d="M 170,405 L 342,405 L 352,422 L 160,422 Z" fill="url(#gold)"/>
+  </g>
+</svg>
